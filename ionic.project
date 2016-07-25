@@ -1,0 +1,9 @@
+{
+  "name": "boilerplate2",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "webpack",
+    "sass",
+    "watch"
+  ]
+}
