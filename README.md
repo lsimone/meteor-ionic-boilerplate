@@ -1,25 +1,29 @@
-Ionic App Base
+Universal boilerplate
 =====================
 
-A starting project for Ionic that optionally supports using custom SCSS.
+## goals
 
-## Using this project
 
-We recommend using the [Ionic CLI](https://github.com/driftyco/ionic-cli) to create new Ionic projects that are based on this project but use a ready-made starter template.
+## run
 
-For example, to start a new Ionic project with the default tabs interface, make sure the `ionic` utility is installed:
-
-```bash
-$ npm install -g ionic
-```
-
-Then run: 
+[install meteor](https://www.meteor.com/install) (OSX/linux: `curl https://install.meteor.com/ | sh` )
 
 ```bash
-$ ionic start myProject tabs
+$ npm install 
+$ npm run dev
 ```
+
+app will run on http://localhost:8100/
+
+
+## links
+
+* [Reactionic](https://github.com/reactionic/reactionic)
+* [ionic+meteor](http://www.angular-meteor.com/tutorials/whatsapp/ionic/bootstrapping)
+* [REST API with meteor](https://atmospherejs.com/simple/rest)
 
 More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/getting-started) page and the [Ionic CLI](https://github.com/driftyco/ionic-cli) repo.
 
-## Issues
-Issues have been disabled on this repo, if you do find an issue or have a question consider posting it on the [Ionic Forum](http://forum.ionicframework.com/).  Or else if there is truly an error, follow our guidelines for [submitting an issue](http://ionicframework.com/submit-issue/) to the main Ionic repository.
+
+## Todo
+

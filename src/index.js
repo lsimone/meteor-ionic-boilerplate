@@ -6,4 +6,5 @@
 import 'script!lib/ionic/js/ionic';
 //import 'script!lib/ionic/js/ionic-angular';
 // app
+import 'script!lib/meteor-client-side/dist/meteor-client-side.bundle';
 import './app';

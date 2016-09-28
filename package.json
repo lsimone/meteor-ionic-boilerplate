@@ -2,6 +2,12 @@
   "name": "ionic-project",
   "version": "1.1.1",
   "description": "An Ionic project",
+  "scripts": {
+    "dev": "npm run meteor & npm run serve",
+    "install": "node_modules/.bin/bower install",
+    "serve": "node_modules/.bin/ionic serve",
+    "meteor": "cd api; meteor; cd -;"
+  },
   "dependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.11.4",
@@ -17,6 +23,8 @@
     "gulp-sass": "^2.0.4",
     "lodash.camelcase": "^4.1.1",
     "lodash.upperfirst": "^4.2.0",
+    "meteor-node-stubs": "^0.2.3",
+    "moment": "^2.15.1",
     "reactionic": "^1.1.2",
     "script-loader": "^0.7.0",
     "webpack": "^1.13.1"

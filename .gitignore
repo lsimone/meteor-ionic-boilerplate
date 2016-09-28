@@ -8,3 +8,4 @@ www/lib
 www/css/
 www/js/
 .idea
+npm-debug.log
