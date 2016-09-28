@@ -27,3 +27,24 @@ More info on this can be found on the Ionic [Getting Started](http://ionicframew
 
 ## Todo
 
+app hello world:
+SASS
+react
+richiesta/risposta API real time
+
+autenticazione
+config file
+ionic funzionante: sia stile che compilazione android ios
+livereactload o hot reload funzionante
+i18n
+
+HTTPS?
+
+
+stack:
+- meteor
+  - ionic
+    - reactionic
+-  gulp
+-  livereactload? rollup? webpack?
+- https://atmospherejs.com/meteor/spiderable
