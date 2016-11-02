@@ -11,7 +11,7 @@ var webpack = require('webpack');
 var webpackConfig = require('./webpack.config');
 
 var paths = {
-  webpack: ['./src/**/*.js', '!./www/lib/**/*', './api/server/**/*.js'],
+  webpack: ['./src/**/*.js', './src/**/*.scss', '!./www/lib/**/*', './api/server/**/*.js'],
   sass: ['./scss/**/*.scss']
 };
 

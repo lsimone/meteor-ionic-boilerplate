@@ -1,0 +1,8 @@
+@import 'variables';
+
+:local(.test) {
+    background-color: $test;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+}

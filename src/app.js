@@ -6,6 +6,23 @@ import ReactDOM from 'react-dom';
 import { Chats } from 'api/collections';
 import { Meteor } from 'meteor/meteor';
 
+import styles from './app.scss'
+
+const TARGET_ID = 'render-target'
+
+document.body.style.color = 'red';
+
+Meteor.autorun(() => {
+    let {status} = Meteor.status();
+
+    if(status === 'connecting') {
+        document.getElementById(TARGET_ID).style.color = 'yellow';
+    }
+    else if (status === 'connected') {
+        document.getElementById(TARGET_ID).style.color = 'green';
+        console.log('TEST2', Meteor.status().status, Chats.find().count())
+    }
+});
 console.log('ECCOMIIIIIIIIIIII', Chats.find().count())
 
 setTimeout(() => {
@@ -18,7 +35,7 @@ var HelloWorld = React.createClass({
             console.log('server returned:' + msg);
         });
         return (
-            <h1>Hello from {this.props.phrase}!</h1>
+            <h1>Hello from <span className={styles.test} > {this.props.phrase}! </span></h1>
         );
     }
 });
@@ -26,6 +43,6 @@ var HelloWorld = React.createClass({
 
 ReactDOM.render(
 <HelloWorld phrase="ES6"/>,
-    document.getElementById('render-target')
+    document.getElementById(TARGET_ID)
 );
 

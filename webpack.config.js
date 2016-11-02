@@ -27,7 +27,9 @@ module.exports = {
             test: /\.js$/,
             exclude: /(node_modules|www)/,
             loader: 'babel'
-        }]
+        },
+            { test: /\.scss$/, loaders: [ 'style', 'css', 'sass' ] }
+        ]
     },
     resolve: {
         extensions: ['', '.js'],

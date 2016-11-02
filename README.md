@@ -15,6 +15,12 @@ $ npm run dev
 
 app will run on http://localhost:8100/
 
+## dev
+for development purpose, run as written before + watch for changes in /src:
+```bash
+$ gulp watch
+```
+
 
 ## links
 
