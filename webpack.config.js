@@ -1,14 +1,20 @@
 var camelCase = require('lodash.camelcase');
 var upperFirst = require('lodash.upperfirst');
+var webpack = require('webpack');
 
 module.exports = {
     entry: [
+        'webpack-hot-middleware/client',
         './src/index.js'
     ],
     output: {
         path: __dirname + '/www/js',
-        filename: 'app.bundle.js'
+        filename: 'app.bundle.js',
+        publicPath: '/js/'
     },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ],
     externals: [
         {
             'cordova': 'cordova',
@@ -20,7 +26,7 @@ module.exports = {
     devtool: 'source-map',
     babel: {
         presets: ['es2015', 'stage-0', 'react'],
-        plugins: ['add-module-exports']
+        plugins: ['react-hot-loader/babel', 'add-module-exports']
     },
     module: {
         loaders: [{
